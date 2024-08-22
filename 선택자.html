@@ -4,8 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>선택자</title>
+  <!--css외부정의-->
+  <link href="style.css" rel="stylesheet">
+  <!--css내부정의-->
+  <style>
+    /*전체 선택자 : 문서에 사용된 모든 요소를 선택*/
+    *{background-color:beige;}
+    /*태그 선택자 : 태그 이름으로 요소를 선택*/
+    h1{color:red;}
+    /*아이디 선택자 : #아이디명으로 선택*/
+    #msh{
+      background-color:#ccc;
+    }
+    /*클래스 선택자: .클래스명으로 선택*/
+    .web{
+      color:purple;
+    }
+  </style>
 </head>
 <body>
-  
+  <!--css인라인 정의-->
+  <h1 id="msh" style="color:gold;">제목태그1-1</h1>
+  <h1 id="wsh" class="web">제목태그1-2</h1>
+  <h1>제목태그1-3</h1>
+  <h1 class="web">제목태그1-4</h1>
+  <h2>제목태그2</h2>
+  <h3 class="web">제목태그3</h3>
+  <h4>제목태그4</h4>
 </body>
 </html>
