@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소숨기기</title>
+    <style>
+      .hidden{
+        visibility: hidden;
+      }
+      .box{
+        display:none;
+      }
+      .overlay {
+        line-height: 4;
+        text-align: center;
+        /*배경색의 투명도를 변경하려면 rgba()를 사용하거나, hex코드를 사용해야 합니다.*/
+        background-color:rgba(255,200,0,0.5);
+        /*rgba(red,green, blue, 투명도)*/
+        background-color:#ffcc0088;
+        /*#red,green,blue,alpha*/
+      }
+      .overlay > .text{
+        opacity:0.75;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="text">이 텍스트는 보입니다.</p>
+      <p class="hidden">이 텍스트는 숨겨져야 합니다.</p>
+    </div>
+
+    <div class="box">이 박스는 보입니다.</div>
+
+    <div class="overlay">
+      <p class="text">이 텍스트는 배경 위에 있습니다.</p>
+    </div>
+  </body>
+</html>
