@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>white-space속성</title>
+  <style>
+    div{
+      width:400px;
+      border:10px solid red;
+      /*
+      rem의 r은 root를 뜻함
+      최상위 요소의 속성값을 기준으로 배수로 적용
+      */
+      font-size:2rem;
+      /*줄바꿈 금지 (기본값 = wrap:줄바꿈 허용)*/
+      white-space:nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi fuga repellendus repudiandae optio autem voluptate illum ab, quia laudantium sunt adipisci recusandae tenetur, est aut non neque praesentium saepe officia!</div>
+</body>
+</html>
