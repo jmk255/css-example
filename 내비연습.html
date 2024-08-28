@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내비게이션 만들기</title>
+  <style>
+    /*노말 라이즈(초기화)*/
+    body{
+      margin:0;
+    }
+    ul,li{
+      margin:0;
+      padding:0;
+      list-style:none;
+    }
+    a{
+      text-decoration: none;
+      /*부모 요소의 color속성을 상속받는다.*/
+      color:inherit;
+    }
+
+    /*타이틀*/
+    .title{
+      text-align: center;
+    }
+
+    /*메뉴 박스*/
+    .menu-box{
+      text-align: center;
+    }
+    /*메뉴*/
+    .menu-box > .menu{
+      display:inline-block;
+      padding:0 10px;
+      background-color:#dfdfdf;
+      border-radius: 10px;
+    }
+
+    /*메뉴 아이템*/
+    .menu-box > .menu > .menu-item{
+      display:inline-block;
+    }
+    /*메뉴 텍스트*/
+    .menu-box > .menu > .menu-item > .text{
+      font-size:18px;
+      padding:10px;
+      display:inline-block;
+    }
+
+    /*마우스로 선택된 메뉴 아이템의 텍스트 글자색상을 변경*/
+    .menu-box .text:hover{
+      color:cadetblue;
+    }
+
+    /*menu-box-2*/
+    .menu-box-2 > ul{
+      width:800px;
+      margin:20px auto;
+      border-radius: 10px;
+      overflow:hidden;
+    }
+    .menu-box-2 li{
+      float:left;
+      width:200px;
+      line-height:60px;
+      background-color:#dfdfdf;
+      text-align: center;
+    }
+    .menu-box-2 a{
+      width:100%;
+      height:100%;
+      display:block;
+    }
+    .menu-box-2 a:hover{
+      color:white;
+      background-color:brown;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">menu-box</h1>
+  <nav class="menu-box">
+    <ul class="menu">
+      <li class="menu-item"><a href="#" class="text">메뉴 아이템 1</a></li>
+      <li class="menu-item"><a href="#" class="text">메뉴 아이템 2</a></li>
+      <li class="menu-item"><a href="#" class="text">메뉴 아이템 3</a></li>
+      <li class="menu-item"><a href="#" class="text">메뉴 아이템 4</a></li>
+    </ul>
+  </nav>
+
+  <!--float로 정렬-->
+  <nav class="menu-box-2">
+    <ul>
+      <li><a href="#">메뉴 아이템</a></li>
+      <li><a href="#">메뉴 아이템</a></li>
+      <li><a href="#">메뉴 아이템</a></li>
+      <li><a href="#">메뉴 아이템</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
