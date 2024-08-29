@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>와이어 프레임</title>
+  <style>
+    ul,li{
+      margin:0; padding:0;
+      list-style: none;
+    }
+
+    header,
+    section,
+    footer{
+      width:840px;
+      outline:1px solid orange;
+      margin:0 auto 10px;
+      overflow:auto;/*자식요소의 margin-top이 부모요소에 적용되는 것을 막아줌*/
+    }
+    header{
+      height:150px;
+    }
+    #logo{
+      width:180px;
+      height:60px;
+      outline:1px solid blue;
+      margin:10px auto;
+    }
+    #gnb{
+      width:840px;
+      height:60px;
+      outline:1px solid blue;
+      overflow:auto;
+    }
+    #gnb > ul{
+      width:360px;
+      height:40px;
+      outline:1px solid pink;
+      margin:10px auto;
+    }
+
+    #gnb > ul > li{
+      width:80px;
+      height:30px;
+      outline:1px dashed pink;
+      float:left;
+      margin:5px;
+    }
+
+    #banner{
+      height:240px;
+    }
+    #contents{
+      height:410px;
+    }
+    #contents > .box{
+      width:260px;
+      height:190px;
+      outline:1px solid blue;
+      float:left;
+      /*float속성이 적용된 요소는 margin값이 상쇄되지 않는다*/
+      margin:10px 10px 0;
+    }
+    footer{
+      height:90px;
+    }
+    .left, .right{
+      width:260px;
+      height:70px;
+      outline:1px solid blue;
+      margin:10px;
+    }
+    .left{
+      float:left;
+    }
+    .right{
+      float:right;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo"></div>
+    <div id="gnb">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </header>
+  <section id="banner"></section>
+  <section id="contents">
+    <article class="box"></article>
+    <article class="box"></article>
+    <article class="box"></article>
+    <article class="box"></article>
+    <article class="box"></article>
+    <article class="box"></article>
+  </section>
+  <footer>
+    <div class="left"></div>
+    <div class="right"></div>
+  </footer>
+</body>
+</html>
