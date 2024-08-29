@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내비정렬연습2</title>
+  <style>
+    *{margin:0; padding:0;}
+    ul,li{list-style:none;}
+    a{text-decoration: none; color:inherit;}
+
+    nav{
+      min-width:1200px;
+      background-color:#666;
+      color:#fff;
+      font-size:16px;
+      font-weight: bold;
+      padding:40px 0;
+    }
+    nav > .container{
+      width:1200px;
+      margin:0 auto;
+      overflow:auto;
+      padding:0 10px;
+      box-sizing: border-box;
+    }
+    .container > ul{
+      float:left;
+    }
+    .container > ul > li{
+      float:left;
+      margin-right:60px;
+    }
+    .container > .search{
+      float:right;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#">LOGO</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">profile</a></li>
+        <li><a href="#">portfolio</a></li>
+        <li><a href="#">album</a></li>
+        <li><a href="#">contact</a></li>
+        <li><a href="#">skill</a></li>
+      </ul>
+      <div class="search">
+        <a href="#">
+          <img src="bg_image/search.png" alt="search"> 
+        </a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
