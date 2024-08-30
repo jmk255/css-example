@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position속성</title>
+  <style>
+    div.parent{/*div태그 중에서 클래스가 parent인 요소 선택*/
+      width:100%;/*생략해도 됨*/
+      background-color:#ccc;
+      position:relative;/*유령의 집화*/
+      /*pos:abs를 적용한 자식요소의 기준이 됨*/
+    }
+    div.parent > div.child{
+      width:200px;
+      height:200px;
+      background-color:orange;
+      position:static;/*블럭요소가 기본적으로 가지고 있는 포지션 값(초기화)*/
+    }
+    /*선택자가 길수록 우선순위를 가짐*/
+    div.parent > div.ch1{
+      background-color:#fc0;
+      position:relative;/*유령의 집화:위치속성을 적용해서 상대적으로 위치를 이동할 수 있다*/
+      top:100px;
+      left:100px;
+      z-index:3;/*도형의 위아래(z축) 순서 변경시 사용*/
+    }
+    div.parent > div.ch2{
+      background-color:#f70;
+      position:absolute;/*유령상태(부유상태)*/
+      /*좌표속성 : left:좌측 기준, top:상단 기준, right:우측 기준, bottom:하단 기준*/
+      bottom:50px;
+      right:100px;
+      z-index:3;
+    }
+    div.parent > div.ch3{
+      background-color:#f00;
+      position:absolute;
+      
+    }
+
+
+  </style>
+</head>
+<body>
+  <h1>position = 위치속성</h1>
+
+  <div class="parent">
+    <div class="child ch1">BOX1</div>
+    <div class="child ch2">BOX2</div>
+    <div class="child ch3">BOX3</div>
+  </div>
+</body>
+</html>
