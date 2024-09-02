@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overlay</title>
+  <!--폰트어썸 CDN-->
+  <script src="https://kit.fontawesome.com/632d3e2496.js" crossorigin="anonymous"></script>
+  <style>
+    .container{
+      width:80%;
+      margin:0 auto;
+      position:relative;/*유령의 집화*/
+    }
+    .container > img{
+      display:block;
+      width:100%;
+    }
+    .overlay{
+      /* background-color:gray; */
+      position:absolute;/*유령화*/
+      /*pos:abs를 적용한 요소를 부모요소의 100%크기로 설정할 때
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;*/
+
+      color:#fff;
+      font-size:50px;
+      /*pos:abs를 적용한 요소를 가운데 정렬하는 방법*/
+      left:50%;
+      top:50%;
+      transform:translate(-50%,-50%);
+      /*화면에서 제거*/
+      /* display:none; */
+      opacity:0;
+      transition:opacity 1s;/*opacity가 변경되면 1초에 걸쳐 서서히 변경됨*/
+    }
+    /*container에 마우스를 올리면 .overlay가 나타남*/
+    .container:hover > .overlay{
+      /* display:block; */
+      opacity:1;
+    }
+    i{
+      font-size:50px;
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div class="overlay">
+      <div class="txt">Hello Dog!</div>
+    </div>
+  </div>
+  <i class="fab fa-facebook-square fa-spin"></i>
+</body>
+</html>
