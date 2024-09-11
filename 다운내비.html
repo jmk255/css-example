@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>다운내비게이션</title>
+  <style>
+    *{margin:0; padding:0;}
+    ul,li{list-style:none;}
+    a{text-decoration: none; color:inherit;}
+
+    section{
+      height:500px;
+      background-color:lightyellow;
+      border:1px solid red;
+    }
+
+    .gnb{
+      width:800px;
+      margin:0 auto;
+      display:flex;
+      text-align: center;
+    }
+    .gnb > li {
+      width:25%;
+      position:relative;/*유령의 집화*/
+    }
+    .gnb > li > a{
+      display:block;
+      padding:10px 0;
+    }
+    .gnb > li:hover > a{
+      background-color:tomato;
+      color:#fff;
+    }
+    /*서브메뉴를 가려줍니다.*/
+    .sub{
+      position:absolute;/*유령화*/
+      width:100%;
+      display:none;
+      background-color:#fff;
+    }
+    .sub > li > a{
+      display:block;
+      padding:10px 0;
+    }
+    .sub > li:hover > a{
+      background-color:turquoise;
+      color:#fff;
+    }
+
+    /*메뉴에 마우스를 올리면 서브메뉴가 표시*/
+    .gnb > li:hover > .sub{
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul class="gnb">
+      <li>
+        <a href="#">메뉴</a>
+        <ul class="sub">
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">메뉴</a>
+        <ul class="sub">
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">메뉴</a>
+        <ul class="sub">
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">메뉴</a>
+        <ul class="sub">
+          <li><a href="#">서브메뉴</a></li>
+          <li><a href="#">서브메뉴</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <section><h1>섹션 영역입니다.</h1></section>
+</body>
+</html>
