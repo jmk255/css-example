@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>정렬 연습</title>
+  <style>
+    *{margin:0; padding:0;}
+    section{
+      width:800px;
+      height:620px;
+      margin:10px auto;
+      box-shadow:0 0 10px rgba(0,0,0,0.2);
+      position:relative;
+    }
+    section > h1{
+      font-family: "Broadway";
+      font-size:18px;
+      color:#111;
+      text-align: center;
+      padding-top:20px;
+    }
+    section > h1 > b{
+      font-weight: normal;
+      font-family: Arial;
+      font-size:12px;
+      color:#666;
+      line-height: 2;
+    }
+    /*민트색 배경요소*/
+    section::before{
+      content:"";
+      position:absolute;
+      width:800px;
+      height:100px;
+      background-color:#37c3bf;
+      left:0;
+      bottom:120px;
+    }
+    section > img{
+      position:absolute;
+      left:60px;
+      bottom:120px;
+    }
+    section > .inner{
+      width:406px;
+      height:300px;
+      position:absolute;
+      bottom:60px;
+      right:60px;
+    }
+    section > .inner::before{
+      content: "";
+      position: absolute;
+      width:260px;
+      height:300px;
+      background:linear-gradient(0deg,#fec704, #fc80c1);
+    }
+    section > .inner > .txt{
+      width:350px;
+      height:240px;
+      position: absolute;
+      right:0;
+      top:calc(50% - 120px);
+      background-color:#fff;
+      padding:40px 30px;
+      box-sizing: border-box;
+    }
+    section > .inner > .txt > h2{
+      font-family: "Broadway";
+      font-size:14px;
+      margin-bottom:15px;
+    }
+    section > .inner > .txt > p{
+      font-size:12px;
+      line-height: 1.6;
+      margin-bottom:15px;
+    }
+    section > .inner > .txt > button{
+      background:transparent;
+      border:0;
+      font-size:12px;
+      color:#fc80c1;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>
+      <b>FACILITY</b><br>
+      make your children's life special
+    </h1>
+    <img src="images/facility.jpg" alt="">
+    <div class="inner">
+      <div class="txt">
+        <h2>Relaxation and comport</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam laudantium asperiores recusandae. Quam temporibus ipsum natus ratione perferendis, maiores repellendus voluptatibus odio dolorem, officia eum, aliquid repellat debitis dicta quia.</p>
+        <button>READ MORE</button>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

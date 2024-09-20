@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내비게이션</title>
+  <style>
+    *{
+      margin:0; padding:0;
+    }
+    ul{list-style: none;}
+    a{text-decoration: none; color:inherit}
+
+    nav{
+      width:1200px;
+      margin:0 auto;
+    }
+    nav > ul{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      padding:0 30px;
+      gap:40px;
+    }
+
+    nav > ul > li:nth-of-type(4){
+      flex:1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">NEWS</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#"><img src="images/summer.png" alt="" width="160"></a></li>
+      <li><a href="#">BOARD</a></li>
+      <li><a href="#">ALBUM</a></li>
+      <li><a href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
